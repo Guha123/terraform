@@ -8,11 +8,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "terraform-state-bucket"
+    bucket         = "terraform-state-bucket-1024"
     key            = "cloudfront-s3/terraform.tfstate"
     region         = "us-east-1"
-    encrypt        = true
-    dynamodb_table = "terraform-state-lock"
+
   }
 }
 

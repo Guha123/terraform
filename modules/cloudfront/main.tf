@@ -39,3 +39,6 @@ resource "aws_cloudfront_distribution" "this" {
 
   tags = var.tags
 }
+
+
+# guha
